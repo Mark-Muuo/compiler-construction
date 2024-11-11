@@ -1,0 +1,37 @@
+Example 1: Simple Expression
+Consider a Zara expression: x = a + b * c
+	
+t1 = b * c     // Multiply b and c, store in temporary variable t1
+t2 = a + t1    // Add a to t1, store in t2
+x = t2         // Assign the result to x
+
+
+
+Example 2: Conditional Control Structure
+Consider an if-else statement in Zara:
+if (a > b) {
+    x = x + 1;
+} else {
+    x = x - 1;
+}
+
+TAC Representation:
+if a > b goto L1
+goto L2
+L1: t1 = x + 1
+    x = t1
+    goto L3
+L2: t2 = x - 1
+    x = t2
+L3: // Continue here
+
+
+Example 3: Method Call
+Suppose you have a Zara method call: result = add(a, b)
+
+TAC Representation:
+
+param a      // Pass parameter a
+param b      // Pass parameter b
+t1 = call add, 2   // Call method 'add' with 2 parameters, store result in t1
+result = t1       // Assign the return value to result
