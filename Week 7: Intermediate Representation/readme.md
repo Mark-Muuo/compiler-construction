@@ -1,3 +1,4 @@
+```
 When you run intermediate-rep.py , you would get output like:
 
 TAC for expression 'x = a + b * c':
@@ -25,3 +26,4 @@ result = t4
 
 
 This is because we have put our test cases in the code at the function call. This explains the concept of Third-Address Code(TAC)
+```
